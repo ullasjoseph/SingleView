@@ -21,7 +21,7 @@
     UIView* mainView=self.view;
     UIView* v=[[UIView alloc]initWithFrame:CGRectMake(100,111,132,194)];
     UIView* v2=[[UIView alloc]initWithFrame:CGRectMake(0,0,132,10)];
-    UIView* v3=[[UIView alloc]initWithFrame:CGRectMake(v.bounds.size.width-17,v.bounds.size.height-20,20,20)];
+    UIView* v3=[[UIView alloc]initWithFrame:CGRectMake(v.bounds.size.width-20,v.bounds.size.height-20,20,20)];
     
     v.backgroundColor=[UIColor colorWithRed:1 green:.4 blue:1 alpha:1];
     v2.backgroundColor=[UIColor colorWithRed:.5 green:.4 blue:.7 alpha:1];
@@ -32,7 +32,7 @@
     v3.autoresizingMask=UIViewAutoresizingFlexibleTopMargin| UIViewAutoresizingFlexibleLeftMargin;
     [mainView addSubview:v];
     [v addSubview:v2];
-    [v2 addSubview:v3];//added by Ullas Joseph
+    [v addSubview:v3];//added by Ullas Joseph
     
     CGRect r =v2.bounds;
     r.size.height+=39;
