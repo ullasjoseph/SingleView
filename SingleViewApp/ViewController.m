@@ -19,11 +19,24 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     UIView* mainView=self.view;
-    UIView* v=[[UIView alloc]initWithFrame:CGRectMake(100,100,10,10)];
+    UIView* v=[[UIView alloc]initWithFrame:CGRectMake(115,111,132,194)];
+    UIView* v2=[[UIView alloc]initWithFrame:CGRectMake(43,111,120,111)];
+    UIView* v3=[[UIView alloc]initWithFrame:CGRectInset(v2.bounds, 17, 15)];
     
-    v.backgroundColor=[UIColor redColor];
+    v.backgroundColor=[UIColor colorWithRed:1 green:.4 blue:1 alpha:1];
+    v2.backgroundColor=[UIColor colorWithRed:.5 green:.4 blue:.7 alpha:1];
+    v3.backgroundColor=[UIColor colorWithRed:.7 green:.4 blue:0 alpha:1];
     
-    [mainView addSubview:v];                              //added by Ullas Joseph
+    [mainView addSubview:v];
+    [v addSubview:v2];
+    [v2 addSubview:v3];//added by Ullas Joseph
+    
+   /* CGRect r =v2.bounds;
+    r.size.height+=100;
+    r.size.width-=10;
+    r.origin.x+=100;
+    v2.bounbs
+    */
     mainView.backgroundColor=[UIColor yellowColor];
     
 }
