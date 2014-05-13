@@ -27,6 +27,8 @@
     v2.backgroundColor=[UIColor colorWithRed:.5 green:.4 blue:.7 alpha:1];
     v3.backgroundColor=[UIColor colorWithRed:.7 green:.4 blue:0 alpha:1];
     
+    v2.transform=CGAffineTransformMakeRotation(45*M_PI/180);
+    
     [mainView addSubview:v];
     [v addSubview:v2];
     [v2 addSubview:v3];//added by Ullas Joseph
